@@ -1,4 +1,5 @@
 import * as readline from 'readline'
+import * as colors from 'colors'
 
 const rl = readline.createInterface({
   input: process.stdin,
@@ -29,12 +30,12 @@ const handleAnswer = async (input) => {
 
 const logWelcome = () => {
   console.clear()
-  console.log('---------------------- Hello Friend! ----------------------')
-  console.log('---                                                     ---')
-  console.log('---       Welcome to Advent of Code 2020 solutions      ---')
-  console.log('---                    by norbitrial                    ---')
-  console.log('---                                                     ---')
-  console.log('-----------------------------------------------------------\n')
+  console.log(colors.bold.yellow('---------------------- Hello Friend! ----------------------'))
+  console.log(colors.bold.yellow('---                                                     ---'))
+  console.log(colors.bold.yellow('---       Welcome to Advent of Code 2020 solutions      ---'))
+  console.log(colors.bold.yellow('---                    by norbitrial                    ---'))
+  console.log(colors.bold.yellow('---                                                     ---'))
+  console.log(colors.bold.yellow('-----------------------------------------------------------\n'))
 }
 const askForNumber = () => {
   logWelcome()
