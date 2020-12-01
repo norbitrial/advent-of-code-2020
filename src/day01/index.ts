@@ -200,33 +200,44 @@ const input = `1753
 1572`
 
 const run = () => {
-    const nums = input.split('\n')
-    const requiredSum = 2020
-    let solutionTwoDays = {}
-    let solutionThreeDays = {}
+  const nums = input.split('\n')
+  const requiredSum = 2020
+  let solutionTwoDays = {}
+  let solutionThreeDays = {}
 
-    nums.forEach(numFirst => {
-        nums.forEach(numSecond => {
-            const result = parseInt(numFirst) + parseInt(numSecond)
+  nums.forEach((numFirst) => {
+    nums.forEach((numSecond) => {
+      const result = parseInt(numFirst) + parseInt(numSecond)
 
-            if (result === requiredSum) {
-                solutionTwoDays ={numFirst, numSecond, finalSolution: parseInt(numFirst) * parseInt(numSecond)}
-            }
+      if (result === requiredSum) {
+        solutionTwoDays = {
+          numFirst,
+          numSecond,
+          finalSolution: parseInt(numFirst) * parseInt(numSecond),
+        }
+      }
 
-            nums.forEach(thirdNum => {
-                const result = parseInt(numFirst) + parseInt(numSecond) + parseInt(thirdNum)
+      nums.forEach((thirdNum) => {
+        const result =
+          parseInt(numFirst) + parseInt(numSecond) + parseInt(thirdNum)
 
-                if (result === requiredSum) {
-                    solutionThreeDays = {numFirst, numSecond, thirdNum, finalSolution: parseInt(numFirst) * parseInt(numSecond) * parseInt(thirdNum)}
-                }
-            })
-        })
+        if (result === requiredSum) {
+          solutionThreeDays = {
+            numFirst,
+            numSecond,
+            thirdNum,
+            finalSolution:
+              parseInt(numFirst) * parseInt(numSecond) * parseInt(thirdNum),
+          }
+        }
+      })
     })
+  })
 
-    console.log('Result:', {
-        solutionTwoDays,
-        solutionThreeDays
-    })
+  console.log('Result:', {
+    solutionTwoDays,
+    solutionThreeDays,
+  })
 }
 
 export default run
