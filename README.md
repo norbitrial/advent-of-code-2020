@@ -4,7 +4,7 @@ This repository is made for participating in [Advent of Code 2020](https://adven
 
 See below my solutions separated by day:
 
-- [Day 01](/day01.ts)
+- [Day 01](/src/day01/index.ts)
 
 ## Guide to use 📙
 
