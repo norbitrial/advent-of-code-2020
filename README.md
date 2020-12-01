@@ -12,6 +12,10 @@ After cloning the repository run the following commands:
 
 The build command will place all the complied _JavaScript_ files in the `dist` folder.
 
+Screenshot from the helper app:
+
+![App-Screenshot](/assets/example_screenshot_01.png)
+
 ## Solutions for each days 🔮
 
 See below my solutions separated by day:
