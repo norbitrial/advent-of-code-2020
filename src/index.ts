@@ -39,7 +39,7 @@ const logWelcome = () => {
 }
 const askForNumber = () => {
   logWelcome()
-  rl.question(`Tell me which day's challange you'd like run? `, handleAnswer);
+  rl.question(`Tell me which day's challenge you'd like run? `, handleAnswer);
 }
 const closeSession = () => {
   rl.close();
