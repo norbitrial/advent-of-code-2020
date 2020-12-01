@@ -1,55 +1,47 @@
-import { createInterface } from 'readline'
-import { createReadStream } from 'fs'
+import readByLines from '../helpers/readByLines'
 
-const run = () => {
-  const nums = []
+const INPUT_FILE_PATH = 'src/day01/input.txt'
 
-  const fileStream = createReadStream('src/day01/input.txt')
-  const lineReader = createInterface({
-    input: fileStream,
-  })
+const run = async () => {
+  const nums = await readByLines(INPUT_FILE_PATH)
+  console.log('With the following input ...', nums)
 
-  const onLineRead = (line) => nums.push(line)
+  const requiredSum = 2020
+  let solutionTwoDays = {}
+  let solutionThreeDays = {}
 
-  lineReader.on('line', onLineRead)
-  lineReader.on('close', () => {
-    const requiredSum = 2020
-    let solutionTwoDays = {}
-    let solutionThreeDays = {}
+  nums.forEach((numFirst) => {
+    nums.forEach((numSecond) => {
+      const result = parseInt(numFirst) + parseInt(numSecond)
 
-    nums.forEach((numFirst) => {
-      nums.forEach((numSecond) => {
-        const result = parseInt(numFirst) + parseInt(numSecond)
+      if (result === requiredSum) {
+        solutionTwoDays = {
+          numFirst,
+          numSecond,
+          finalSolution: parseInt(numFirst) * parseInt(numSecond),
+        }
+      }
+
+      nums.forEach((thirdNum) => {
+        const result =
+          parseInt(numFirst) + parseInt(numSecond) + parseInt(thirdNum)
 
         if (result === requiredSum) {
-          solutionTwoDays = {
+          solutionThreeDays = {
             numFirst,
             numSecond,
-            finalSolution: parseInt(numFirst) * parseInt(numSecond),
+            thirdNum,
+            finalSolution:
+              parseInt(numFirst) * parseInt(numSecond) * parseInt(thirdNum),
           }
         }
-
-        nums.forEach((thirdNum) => {
-          const result =
-            parseInt(numFirst) + parseInt(numSecond) + parseInt(thirdNum)
-
-          if (result === requiredSum) {
-            solutionThreeDays = {
-              numFirst,
-              numSecond,
-              thirdNum,
-              finalSolution:
-                parseInt(numFirst) * parseInt(numSecond) * parseInt(thirdNum),
-            }
-          }
-        })
       })
     })
+  })
 
-    console.log('Result:', {
-      solutionTwoDays,
-      solutionThreeDays,
-    })
+  console.log('Result:', {
+    solutionTwoDays,
+    solutionThreeDays,
   })
 }
 

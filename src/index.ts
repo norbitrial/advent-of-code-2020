@@ -18,7 +18,7 @@ const handleAnswer = async (input) => {
       console.log(`Running ${filePath} challenge ...`)
       const code = await import(filePath)
 
-      code.default()
+      await code.default()
     } catch {
       console.warn('\nSomething bad happened ...')
       console.warn('Maybe there is no code example for that day. :(')
