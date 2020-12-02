@@ -1,4 +1,5 @@
 import readByLines from '../helpers/readByLines'
+import getCountByPosition from './getCountByPosition'
 import getCountOfValidPass from './getCountOfValidPass'
 
 const INPUT_FILE_PATH = 'src/day02/input.txt'
@@ -14,9 +15,15 @@ const run = async () => {
 
   const result = getCountOfValidPass(lines)
 
-  console.log(`Count of valid password from input is ${result}.`)
+  console.log(`Count of valid password from input is ${result} by old rule.`)
 
   console.log({ finishedAt: new Date() })
+
+  const resultByPosition = getCountByPosition(lines)
+
+  console.log(
+    `Count of valid password from input is ${resultByPosition} by position rule.`
+  )
 }
 
 export default run
