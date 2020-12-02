@@ -20,4 +20,12 @@ Screenshot from the helper app:
 
 See below my solutions separated by day:
 
-- [Day 01](/src/day01/index.ts) answer for [https://adventofcode.com/2020/day/1](https://adventofcode.com/2020/day/1)
+| Day                                       | Title                                             | Solution Files                                                                          |
+| ----------------------------------------- | ------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| [01](https://adventofcode.com/2020/day/1) | [Report Repair](/src/day01/description.txt)       | [findTwoSum.ts](/src/day01/findTwoSum.ts) [findThereSum.ts](/src/day01/findThereSum.ts) |
+| [02](https://adventofcode.com/2020/day/2) | [Password Philosophy](/src/day01/description.txt) |                                                                                         |
+|                                           |                                                   |                                                                                         |
+
+---
+
+Have a nice day! 👋
