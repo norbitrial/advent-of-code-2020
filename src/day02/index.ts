@@ -24,6 +24,8 @@ const run = async () => {
   console.log(
     `Count of valid password from input is ${resultByPosition} by position rule.`
   )
+
+  console.log({ finishedAt: new Date() })
 }
 
 export default run
