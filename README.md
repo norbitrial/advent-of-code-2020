@@ -20,10 +20,10 @@ Screenshot from the helper app:
 
 See below my solutions separated by day:
 
-| Day                                       | Title                                             | Example Input                     | Solution Files                                                                      |
-| ----------------------------------------- | ------------------------------------------------- | --------------------------------- | ----------------------------------------------------------------------------------- |
-| [01](https://adventofcode.com/2020/day/1) | [Report Repair](/src/day01/description.txt)       | [input.txt](/src/day01/input.txt) | [findTwoSum.ts](/src/day01/input.txt) [findThereSum.ts](/src/day01/findThereSum.ts) |
-| [02](https://adventofcode.com/2020/day/2) | [Password Philosophy](/src/day01/description.txt) | [input.txt](/src/day02/input.txt) | n/a                                                                                 |
+| Day                                       | Title                                             | Example Input                     | Solution Files                                                                                                         |
+| ----------------------------------------- | ------------------------------------------------- | --------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| [01](https://adventofcode.com/2020/day/1) | [Report Repair](/src/day01/description.txt)       | [input.txt](/src/day01/input.txt) | [findTwoSum.ts](/src/day01/findTwoSum.ts) [findThereSum.ts](/src/day01/findThereSum.ts)                                |
+| [02](https://adventofcode.com/2020/day/2) | [Password Philosophy](/src/day01/description.txt) | [input.txt](/src/day02/input.txt) | [getCountOfValidPass.ts](/src/day02/getCountOfValidPass.ts) [getCountByPosition.ts](/src/day02/getCountByPosition.ts)] |
 |                                           |                                                   |                                   |
 
 Have a nice day! 👋
