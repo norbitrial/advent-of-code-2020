@@ -1,23 +1,7 @@
 import readByLines from '../helpers/readByLines'
+import findTwoSum from './findTwoSum'
 
 const INPUT_FILE_PATH = 'src/day01/input.txt'
-
-const findTwoSum = (requiredSum: number, numbers: Array<number>) => {
-  const hashMap = new Set(numbers)
-  let lookingFor
-
-  for (const number of numbers) {
-    lookingFor = requiredSum - number
-
-    if (hashMap.has(lookingFor)) {
-      return {
-        numberOne: number,
-        numberTwo: lookingFor,
-        multiplied: number * lookingFor,
-      }
-    }
-  }
-}
 
 const run = async () => {
   const lines = await readByLines(INPUT_FILE_PATH)
