@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc",
     "start": "tsc && node dist/index.js",
-    "test": "jest",
+    "test": "jest --watchAll",
     "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write"
   },
   "repository": {
