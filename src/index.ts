@@ -6,7 +6,7 @@ const rl = readline.createInterface({
   output: process.stdout,
 })
 
-const handleAnswer = async (input) => {
+const handleAnswer = async (input: any) => {
   logWelcome()
   const answer = parseInt(input)
 

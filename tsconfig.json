@@ -1,8 +1,13 @@
 {
     "compilerOptions": {
-        "module": "commonjs",
+        "module": "CommonJS",
         "outDir": "dist",
         "target": "ES2020",
-        "rootDir": "./src"
-    }
+        "rootDir": "./src",
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "resolveJsonModule": true
+    },
+    "exclude": ["**/*.test.ts", "**/*.mock.ts", "node_modules"],
+    "include": ["src"]
 }

@@ -8,7 +8,7 @@ const readByLines = async (filePath: string): Promise<Array<string>> => {
   })
   const lines: Array<string> = []
 
-  const onLineRead = (line) => lines.push(line)
+  const onLineRead = (line: string) => lines.push(line)
 
   lineReader.on('line', onLineRead)
 
