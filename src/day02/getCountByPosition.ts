@@ -1,4 +1,4 @@
-import isValidPasswordByPosition from './helpers/isValidPasswordByPosition'
+import isValidPassByPosition from './helpers/isValidPassByPosition'
 
 const RULE_AND_PASSWORD_SEPARATOR = ':'
 const RULE_SEPARATOR = ' '
@@ -12,7 +12,7 @@ const getCountByPosition = (lines: Array<string>): number =>
     const firstPosition = parseInt(first)
     const secondPosition = parseInt(second)
 
-    const isValid = isValidPasswordByPosition(
+    const isValid = isValidPassByPosition(
       password.trim(),
       char,
       firstPosition,

@@ -1,6 +1,6 @@
 import isValidPassword from './isValidPassword'
 
-describe('getCountOfValidPass', () => {
+describe('isValidPassword', () => {
   it('should return true for 5, 5, 10', () => {
     const occurence = 5
     const smallest = 5

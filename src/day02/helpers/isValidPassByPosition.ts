@@ -1,4 +1,4 @@
-const isValidPasswordByPosition = (
+const isValidPassByPosition = (
   password: string,
   char: string,
   firstPosition: number,
@@ -16,4 +16,4 @@ const isValidPasswordByPosition = (
   return hasFirst || hasSecond
 }
 
-export default isValidPasswordByPosition
+export default isValidPassByPosition
