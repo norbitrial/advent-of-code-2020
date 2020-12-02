@@ -29,6 +29,8 @@ See below my solutions separated by day:
 
 ## Testing 🧪
 
-Testing is really important even with small units, based on this rule most of the functions are covered with **jest** test cases. Running test cases and generating code coverage report with `npm test`. The coverage report can be found after runing tests in `/coverage` folder.
+Testing is really important even with small units, based on this rule most of the functions are covered with **jest** test cases. Running test cases and generating code coverage report with `npm test`. The coverage report can be found after runing tests in `/coverage` folder. See an example from the terminal:
+
+![Jest-Screenshot](/assets/example_screenshot_02.png)
 
 Have a nice day! 👋
