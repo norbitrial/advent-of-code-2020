@@ -1,3 +1,4 @@
+import getCharOccurrence from './helpers/getCharOccurrence'
 import isValidPassword from './helpers/isValidPassword'
 
 const RULE_AND_PASSWORD_SEPARATOR = ':'
@@ -9,7 +10,7 @@ const getCountOfValidPass = (lines: Array<string>): number =>
     const [rule, password] = line.split(RULE_AND_PASSWORD_SEPARATOR)
     const [numbersBetween, char] = rule.split(RULE_SEPARATOR)
     const [smallest, biggest] = numbersBetween.split(NUMBER_SEPARATOR)
-    const occurrence = password.split('').filter((c) => c === char).length
+    const occurrence = getCharOccurrence(password, char)
     const isValid = isValidPassword(
       occurrence,
       parseInt(smallest),
