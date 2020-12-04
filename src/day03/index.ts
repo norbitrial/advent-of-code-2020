@@ -1,5 +1,4 @@
 import readByLines from '../helpers/readByLines'
-import getArboralStop from './getArboralStop'
 import getCountOfTrees from './getCountOfTrees'
 
 const INPUT_FILE_PATH = 'src/day03/input.txt'
