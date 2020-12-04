@@ -1,12 +1,10 @@
 import getCountOfValidPass from './getCountOfValidPass'
-import readByLines from '../helpers/readByLines'
+import readFile from '../helpers/readFile'
 
-const INPUT_FILE_PATH = 'src/day03/input.txt'
+const INPUT_FILE_PATH = 'src/day04/input.txt'
 
 const run = async () => {
-  const lines = await readByLines(INPUT_FILE_PATH)
-  // imporvement TODO: read as text originally
-  const input = lines.join('')
+  const input = await readFile(INPUT_FILE_PATH)
 
   console.log('With the following options ...')
   console.log({
