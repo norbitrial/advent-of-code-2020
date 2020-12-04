@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/norbitrial/advent-of-code-2020.svg?style=shield&circle-token=d18854d2a0647b65366601a14dd753679e8f84d8)](https://app.circleci.com/pipelines/github/norbitrial/advent-of-code-2020?branch=master)
+
 # Advent of Code 2020 by norbitrial 🎄👨‍💻
 
 This repository is made for participating in [Advent of Code 2020](https://adventofcode.com/2020/about) event.
