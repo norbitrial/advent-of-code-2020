@@ -6,6 +6,8 @@ jobs:
     executor:
       name: node/default
     steps:
+      - run: npm i
+      - run: npm i -D
       - run: npm run-script build
       - run: npm test
 workflows:
