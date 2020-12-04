@@ -12,13 +12,10 @@ const run = async () => {
     fileLength: input.length,
   })
 
-  try {
-    const result = getCountOfValidPass(input)
+  const result = getCountOfValidPass(input)
 
-    console.log(`Result ...`, result)
-  } catch (e) {
-    console.log({ e })
-  }
+  console.log(`Result ...`, result)
+
   console.log({ finishedAt: new Date() })
 }
 

@@ -2,15 +2,22 @@ import KeyValue from './keyValue.type'
 import isValidPassport from './helpers/isValidPassport'
 import getPassports from './helpers/getPassports'
 import CONSTS from './consts'
-import isValidPassword from '../day02/helpers/isValidPassword'
+import hasRequiredFields from './helpers/hasRequiredFields'
 
-const getCountOfValidPass = (input: string): number => {
+type ValidResult = {
+  passportsCount: number
+  hasAllRequiredFieldCount: number
+  validPassportCount: number
+}
+
+const getCountOfValidPass = (input: string): ValidResult => {
+  let hasAllRequiredFieldCount = 0
   let validPassportCount = 0
   const passportList: Array<string> = getPassports(
     input,
-    CONSTS.PASSPORT_NEW_SEPARATOR
+    CONSTS.PASSPORT_SEPARATOR
   )
-  console.log({ length: passportList.length })
+
   passportList.forEach((passport: string, index: number) => {
     const keyValues = passport.split(CONSTS.PASSPORT_KEY_SEPARATOR)
 
@@ -22,14 +29,23 @@ const getCountOfValidPass = (input: string): number => {
       return hashMap
     }, {} as KeyValue)
 
+    const hasAllRequiredFields = hasRequiredFields(passportHashMap)
     const isValid = isValidPassport(passportHashMap)
+
+    if (hasAllRequiredFields) {
+      hasAllRequiredFieldCount++
+    }
 
     if (isValid) {
       validPassportCount++
     }
   })
 
-  return validPassportCount
+  return {
+    passportsCount: passportList.length,
+    hasAllRequiredFieldCount,
+    validPassportCount,
+  }
 }
 
 export default getCountOfValidPass
