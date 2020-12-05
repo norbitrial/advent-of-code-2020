@@ -1,9 +1,10 @@
-import readFile from '../helpers/readFile'
+import readByLines from '../helpers/readByLines'
+import getHighestSeatNumber from './getHighestSeatNumber'
 
 const INPUT_FILE_PATH = 'src/day05/input.txt'
 
 const run = async () => {
-  const input = await readFile(INPUT_FILE_PATH)
+  const input = await readByLines(INPUT_FILE_PATH)
 
   console.log('With the following options ...')
   console.log({
@@ -11,7 +12,7 @@ const run = async () => {
     fileLength: input.length,
   })
 
-  const result = undefined
+  const result = getHighestSeatNumber(input)
 
   console.log(`Result ...`, result)
 
