@@ -1,4 +1,5 @@
 import readByLines from '../helpers/readByLines'
+import findThreeSum from './findThreeSum'
 import findTwoSum from './findTwoSum'
 
 const INPUT_FILE_PATH = 'src/day01/input.txt'
@@ -18,44 +19,9 @@ const run = async () => {
   console.log('Result of findTwoSum ...', resultTwoSum)
   console.log({ finishedAt: new Date() })
 
-  console.log('Slow ...', { start: new Date() })
+  const result = findThreeSum(lines, requiredSum)
 
-  let solutionTwoDays = {}
-  let solutionThreeDays = {}
-
-  lines.forEach((numFirst) => {
-    lines.forEach((numSecond) => {
-      const result = parseInt(numFirst) + parseInt(numSecond)
-
-      if (result === requiredSum) {
-        solutionTwoDays = {
-          numFirst,
-          numSecond,
-          finalSolution: parseInt(numFirst) * parseInt(numSecond),
-        }
-      }
-
-      lines.forEach((thirdNum) => {
-        const result =
-          parseInt(numFirst) + parseInt(numSecond) + parseInt(thirdNum)
-
-        if (result === requiredSum) {
-          solutionThreeDays = {
-            numFirst,
-            numSecond,
-            thirdNum,
-            finalSolution:
-              parseInt(numFirst) * parseInt(numSecond) * parseInt(thirdNum),
-          }
-        }
-      })
-    })
-  })
-
-  console.log('Result:', {
-    solutionTwoDays,
-    solutionThreeDays,
-  })
+  console.log('Result of threeSum ...', result)
 
   console.log('end', { end: new Date() })
 }
