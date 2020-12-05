@@ -1,4 +1,5 @@
 import getMissingSeatId from './getMissingSeatId'
+
 describe('getMissingSeatId', () => {
   it('should find 5 from array', () => {
     const seatIds = [1, 2, 3, 4, 6, 7, 8, 9, 10]

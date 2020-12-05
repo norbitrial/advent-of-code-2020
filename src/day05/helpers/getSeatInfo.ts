@@ -1,8 +1,4 @@
-export type SeatInfo = {
-  row: number
-  column: number
-  id: number
-}
+import { SeatInfo } from './types'
 
 // BFFFBBFRRR: row 70, column 7, seat ID 567.
 // FFFBBBFRRR: row 14, column 7, seat ID 119.
@@ -19,25 +15,20 @@ const getSeatInfo = (line: string): SeatInfo => {
   let widthHalf = 8
 
   splitByChars.forEach((char: string, index: number) => {
-    // back / front
     if (index < 7) {
       lengthHalf = lengthHalf / 2
 
-      // handling row
       if (char === 'B') {
         lowestRow = lowestRow + lengthHalf
       } else {
-        // 'F'
         currentRow = lowestRow + lengthHalf - 1
       }
     } else {
       widthHalf = widthHalf / 2
 
-      //in one row
       if (char === 'R') {
         lowestSeat = lowestSeat + widthHalf
       } else {
-        // 'R'
         currentSeat = lowestSeat + widthHalf - 1
       }
     }
