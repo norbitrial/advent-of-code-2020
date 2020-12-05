@@ -29,7 +29,7 @@ See below my solutions separated by day:
 | [02](https://adventofcode.com/2020/day/2) | [Password Philosophy](/src/day02/description.txt) | [input.txt](/src/day02/input.txt) | [Part One](/src/day02/getCountOfValidPass.ts) [Part Two](/src/day02/getCountByPosition.ts) |
 | [03](https://adventofcode.com/2020/day/3) | [Toboggan Trajectory](/src/day03/description.txt) | [input.txt](/src/day03/input.txt) | [Part One & Two](/src/day03/getCountOfTrees.ts)                                            |
 | [04](https://adventofcode.com/2020/day/4) | [Passport Processing](/src/day04/description.txt) | [input.txt](/src/day04/input.txt) | [Part One & Two](/src/day04/getCountOfValidPass.ts)                                        |
-| [05](https://adventofcode.com/2020/day/5) | [n/a](/src/day05/description.txt)                 | [input.txt](/src/day05/input.txt) | [n/a](/src/day05/.ts)                                                                      |
+| [05](https://adventofcode.com/2020/day/5) | [Binary Boarding](/src/day05/description.txt)     | [input.txt](/src/day05/input.txt) | [Part One & Two](/src/day05/index.ts)                                                      |
 
 ## Testing 🧪
 

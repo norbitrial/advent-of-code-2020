@@ -1,9 +1,12 @@
-import readFile from '../helpers/readFile'
+import readByLines from '../helpers/readByLines'
+import getHighestSeatId from './helpers/getHighestSeatId'
+import getMissingSeatId from './helpers/getMissingSeatId'
+import getTransformedSeatInfo from './helpers/getTransformedSeatInfo'
 
 const INPUT_FILE_PATH = 'src/day05/input.txt'
 
 const run = async () => {
-  const input = await readFile(INPUT_FILE_PATH)
+  const input = await readByLines(INPUT_FILE_PATH)
 
   console.log('With the following options ...')
   console.log({
@@ -11,9 +14,16 @@ const run = async () => {
     fileLength: input.length,
   })
 
-  const result = undefined
+  const seatInfoList = getTransformedSeatInfo(input)
+  const seatIds = seatInfoList.map((e) => e.id)
+  const highestSeatId = getHighestSeatId(seatIds)
 
-  console.log(`Result ...`, result)
+  console.log('Result ...', { highestSeatId })
+  console.log({ finishedAt: new Date() })
+
+  const missingSeatId = getMissingSeatId(seatIds)
+
+  console.log('Result ...', { missingSeatId })
 
   console.log({ finishedAt: new Date() })
 }
