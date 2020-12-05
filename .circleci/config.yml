@@ -1,0 +1,17 @@
+version: 2.1
+orbs:
+  node: circleci/node@3.0.0
+jobs:
+  npm-build-test:
+    executor:
+      name: node/default
+    steps:
+      - checkout
+      - run: npm i
+      - run: npm i -D
+      - run: npm run-script build
+      - run: npm run test-ci
+workflows:
+  build-and-tests:
+    jobs:
+      - npm-build-test
