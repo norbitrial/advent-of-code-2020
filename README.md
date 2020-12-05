@@ -1,4 +1,4 @@
-[![CircleCI](https://circleci.com/gh/norbitrial/advent-of-code-2020.svg?style=shield&circle-token=d18854d2a0647b65366601a14dd753679e8f84d8)](https://app.circleci.com/pipelines/github/norbitrial/advent-of-code-2020?branch=master)
+[![CircleCI](https://circleci.com/gh/norbitrial/advent-of-code-2020.svg?style=shield&circle-token=d18854d2a0647b65366601a14dd753679e8f84d8)](https://app.circleci.com/pipelines/github/norbitrial/advent-of-code-2020?branch=main)
 
 # Advent of Code 2020 by norbitrial 🎄👨‍💻
 
