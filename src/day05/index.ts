@@ -1,5 +1,6 @@
 import readByLines from '../helpers/readByLines'
-import getHighestSeatNumber from './getHighestSeatNumber'
+import getHighestSeatId from './helpers/getHighestSeatId'
+import getTransformedSeatInfo from './helpers/getTransformedSeatInfo'
 
 const INPUT_FILE_PATH = 'src/day05/input.txt'
 
@@ -12,7 +13,8 @@ const run = async () => {
     fileLength: input.length,
   })
 
-  const result = getHighestSeatNumber(input)
+  const seatIds = getTransformedSeatInfo(input).map((e) => e.id)
+  const result = getHighestSeatId(seatIds)
 
   console.log(`Result ...`, result)
 
