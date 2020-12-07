@@ -1,12 +1,12 @@
 import getBagColorsCount from './helpers/getBagColorsCount'
 
 const part01 = (lines: Array<string>): number => {
-  const currentColor = 'shiny gold'
+  const startColor = 'shiny gold'
 
   const colors = new Set<string>([])
-  getBagColorsCount(lines, currentColor, colors)
+  getBagColorsCount(lines, startColor, colors)
 
-  return Array.from(colors).length
+  return colors.size
 }
 
 export default part01

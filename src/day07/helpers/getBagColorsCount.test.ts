@@ -6,7 +6,7 @@ describe('getBagColorsCount', () => {
     const colors = new Set<string>([])
 
     getBagColorsCount(input, 'shiny gold', colors)
-    expect(Array.from(colors).length).toBe(0)
+    expect(colors.size).toBe(0)
   })
 
   it('should return 1 for the input', () => {
@@ -14,7 +14,7 @@ describe('getBagColorsCount', () => {
     const colors = new Set<string>([])
 
     getBagColorsCount(input, 'shiny gold', colors)
-    expect(Array.from(colors).length).toBe(1)
+    expect(colors.size).toBe(1)
   })
 
   it('should return 1 for the input', () => {
@@ -25,7 +25,7 @@ describe('getBagColorsCount', () => {
     const colors = new Set<string>([])
 
     getBagColorsCount(input, 'shiny gold', colors)
-    expect(Array.from(colors).length).toBe(1)
+    expect(colors.size).toBe(1)
   })
 
   it('should return 4 for the input', () => {
@@ -44,7 +44,7 @@ describe('getBagColorsCount', () => {
     const colors = new Set<string>([])
 
     getBagColorsCount(input, 'shiny gold', colors)
-    expect(Array.from(colors).length).toBe(4)
+    expect(colors.size).toBe(4)
   })
 
   it('should', () => {
@@ -63,6 +63,6 @@ describe('getBagColorsCount', () => {
     const colors = new Set<string>([])
 
     getBagColorsCount(input, 'shiny gold', colors)
-    expect(Array.from(colors).length).toBe(5)
+    expect(colors.size).toBe(5)
   })
 })

@@ -1,3 +1,4 @@
+import part02 from '../day07/part02'
 import part01 from '../day07/part01'
 import readByLines from '../helpers/readByLines'
 
@@ -12,9 +13,10 @@ const run = async () => {
     fileLength: input.length,
   })
 
-  const result = part01(input)
+  console.log('Result ...', { result: part01(input) })
+  console.log({ finishedAt: new Date() })
 
-  console.log('Result ...', { result })
+  console.log('Result ...', { result: part02(input) })
   console.log({ finishedAt: new Date() })
 }
 
