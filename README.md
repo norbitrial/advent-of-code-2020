@@ -2,9 +2,11 @@
 
 # Advent of Code 2020 🎄👨‍💻
 
-This repository is made for participating in [Advent of Code 2020](https://adventofcode.com/2020/about) event.
+This repository is made for participating in [Advent of Code 2020](https://adventofcode.com/2020/about) event _which is still ongoing_. 🚧
 
-Check out my website: https://szabonorbert.me 🌐
+Testing is really important even with small units, based on this rule _most of the functions_ are covered with **jest** test cases. _Mainly_ focusing on **TDD** ([Test-driven development](https://en.wikipedia.org/wiki/Test-driven_development)) instead of _quick and dirty_ solutions in this repository.
+
+In the meantime check out my website: https://szabonorbert.me 🌐
 
 [LinkedIn](https://www.linkedin.com/in/norbertszabo1988/) 📝 | [My first game - Feed the Turtle](https://feed-the-turtle.szabonorbert.me/) 🐢 | [StackOverflow Profile](https://stackoverflow.com/users/7599510/norbitrial?tab=profile) 🔮
 
@@ -39,8 +41,6 @@ See below my solutions separated by day:
 | [08](https://adventofcode.com/2020/day/8) | [n/a](/src/day08/description.txt)                 | [input.txt](/src/day08/input.txt) | [Part One](/src/day08/part01.ts) [Part Two](/src/day08/part02.ts)                                  | ❓  |
 
 ## Testing 🧪
-
-Testing is really important even with small units, based on this rule _most of the functions_ are covered with **jest** test cases. _Mainly_ focusing on **TDD** ([Test-driven development](https://en.wikipedia.org/wiki/Test-driven_development)) instead of the _quick and dirty_ of development in this repository.
 
 Running test cases and generating code coverage report with `npm test`. The coverage report can be found after runing tests in `/coverage` folder. See an example from the terminal:
 
