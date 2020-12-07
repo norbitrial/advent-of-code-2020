@@ -2,7 +2,7 @@ import getBagColorsCount from './getBagColorsCount'
 
 describe('getBagColorsCount', () => {
   it('should return 0 for the input', () => {
-    const input = []
+    const input: Array<string> = []
     const colors = new Set<string>([])
 
     getBagColorsCount(input, 'shiny gold', colors)
