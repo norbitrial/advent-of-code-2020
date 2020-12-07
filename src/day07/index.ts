@@ -1,4 +1,5 @@
 import readByLines from '../helpers/readByLines'
+import getBagColorsCount from './helpers/getBagColorsCount'
 
 const INPUT_FILE_PATH = 'src/day07/input.txt'
 
@@ -11,7 +12,7 @@ const run = async () => {
     fileLength: input.length,
   })
 
-  const result = {}
+  const result = getBagColorsCount(input)
 
   console.log('Result ...', { result })
   console.log({ finishedAt: new Date() })
