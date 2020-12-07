@@ -4,7 +4,7 @@ const getBagColorsCount = (
   lines: Array<string>,
   startColor: string,
   colors: Set<string>
-): number => {
+): void => {
   let currentColor = startColor
 
   lines.forEach((sentence: string, index: number) => {
@@ -16,8 +16,6 @@ const getBagColorsCount = (
       getBagColorsCount(lines, nextColor, colors)
     }
   })
-
-  return Array.from(colors).length
 }
 
 export default getBagColorsCount
