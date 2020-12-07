@@ -1,4 +1,4 @@
-import {
+import isValidPassport, {
   isBirthYearValid,
   isIssueYearValid,
   isExpirationYearValid,
@@ -176,6 +176,34 @@ describe(`isValidPassport's`, () => {
 
     it('should return valid for 3556412378', () => {
       expect(isPIDValid('3556412378')).toBe(false)
+    })
+  })
+
+  describe('isValidPassport', () => {
+    it('should return invalid for input', () => {
+      const passport = {
+        pid: '5253256652',
+        byr: '2009',
+        hgt: '152cm',
+        iyr: '1989',
+        eyr: '1968',
+        hcl: '64cb63',
+        ecl: 'hzl',
+      }
+      expect(isValidPassport(passport)).toBe(false)
+    })
+
+    it('should return valid for input', () => {
+      const passport = {
+        pid: '525325665',
+        byr: '1988',
+        hgt: '152cm',
+        iyr: '2010',
+        eyr: '2020',
+        hcl: '#64cb63',
+        ecl: 'hzl',
+      }
+      expect(isValidPassport(passport)).toBe(true)
     })
   })
 })
