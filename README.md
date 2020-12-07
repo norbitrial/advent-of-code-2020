@@ -31,6 +31,7 @@ See below my solutions separated by day:
 | [04](https://adventofcode.com/2020/day/4) | [Passport Processing](/src/day04/description.txt) | [input.txt](/src/day04/input.txt) | [Part One & Two](/src/day04/getCountOfValidPass.ts)                                           |
 | [05](https://adventofcode.com/2020/day/5) | [Binary Boarding](/src/day05/description.txt)     | [input.txt](/src/day05/input.txt) | [Part One & Two](/src/day05/index.ts)                                                         |
 | [06](https://adventofcode.com/2020/day/6) | [Custom Customs](/src/day06/description.txt)      | [input.txt](/src/day06/input.txt) | [Part One](/src/day06/quickAndDirty/part01.ts) [Part Two](/src/day06/quickAndDirty/part02.ts) |
+| [07](https://adventofcode.com/2020/day/7) | [Handy Haversacks](/src/day07/description.txt)    | [input.txt](/src/day07/input.txt) | [Part One](/src/day07/part01.ts) [Part Two](/src/day07/part02.ts)                             |
 
 ## Testing 🧪
 
