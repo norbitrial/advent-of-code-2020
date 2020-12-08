@@ -19,8 +19,8 @@ const handleAnswer = async (input: any) => {
       const code = await import(filePath)
 
       await code.default()
-    } catch {
-      console.warn('\nSomething bad happened ...')
+    } catch (e) {
+      console.warn('\nSomething bad happened ...', { e })
       console.warn('Maybe there is no code example for that day. :(')
     }
   }
