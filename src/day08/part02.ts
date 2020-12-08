@@ -11,10 +11,11 @@ const part02 = (instructionList: Array<string>): number => {
 
   const instructionListOptions: Array<Instruction> = []
   instructionList.forEach((instruction: string, index: number) => {
-    if (
+    const isChangable =
       instruction !== 'nop +0' &&
       (instruction.indexOf('nop') !== -1 || instruction.indexOf('jmp') !== -1)
-    ) {
+
+    if (isChangable) {
       instructionListOptions.push({
         instruction,
         index,
