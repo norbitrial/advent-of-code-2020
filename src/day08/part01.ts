@@ -8,8 +8,6 @@ const part01 = (instructionList: Array<string>): number => {
   while (true) {
     const [action, value] = instructionList[index].split(SPACE)
 
-    console.log({ action, value })
-
     if (alreadyTriedSteps.has(index)) {
       break
     }
