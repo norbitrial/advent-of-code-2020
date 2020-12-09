@@ -29,17 +29,18 @@ Screenshot from the helper app:
 
 See below my solutions separated by day:
 
-| Day                                       | Title                                             | Example Input                     | Solution Files                                                                                     |     |
-| ----------------------------------------- | ------------------------------------------------- | --------------------------------- | -------------------------------------------------------------------------------------------------- | --- |
-| [01](https://adventofcode.com/2020/day/1) | [Report Repair](/src/day01/description.txt)       | [input.txt](/src/day01/input.txt) | [Part One](/src/day01/findTwoSum.ts) [Part Two](/src/day01/findThreeSum.ts)                        | ✅  |
-| [02](https://adventofcode.com/2020/day/2) | [Password Philosophy](/src/day02/description.txt) | [input.txt](/src/day02/input.txt) | [Part One](/src/day02/getCountOfValidPass.ts) [Part Two](/src/day02/getCountByPosition.ts)         | ✅  |
-| [03](https://adventofcode.com/2020/day/3) | [Toboggan Trajectory](/src/day03/description.txt) | [input.txt](/src/day03/input.txt) | [Part One & Two](/src/day03/getCountOfTrees.ts)                                                    | ✅  |
-| [04](https://adventofcode.com/2020/day/4) | [Passport Processing](/src/day04/description.txt) | [input.txt](/src/day04/input.txt) | [Part One & Two](/src/day04/getCountOfValidPass.ts)                                                | ✅  |
-| [05](https://adventofcode.com/2020/day/5) | [Binary Boarding](/src/day05/description.txt)     | [input.txt](/src/day05/input.txt) | [Part One & Two](/src/day05/index.ts)                                                              | ✅  |
-| [06](https://adventofcode.com/2020/day/6) | [Custom Customs](/src/day06/description.txt)      | [input.txt](/src/day06/input.txt) | [Part One](/src/day06/quickAndDirty/part01.ts) [Part Two](/src/day06/quickAndDirty/part02.ts)      | ✅  |
-| [07](https://adventofcode.com/2020/day/7) | [Handy Haversacks](/src/day07/description.txt)    | [input.txt](/src/day07/input.txt) | [Part One](/src/day07/helpers/getBagColorsCount.ts) [Part Two](/src/day07/helpers/getBagsCount.ts) | ✅  |
-| [08](https://adventofcode.com/2020/day/8) | [Handheld Halting](/src/day08/description.txt)    | [input.txt](/src/day08/input.txt) | [Part One](/src/day08/part01.ts) [Part Two](/src/day08/part02.ts)                                  | ✅  |
-| [09](https://adventofcode.com/2020/day/9) | [n/a](/src/day09/description.txt)                 | [input.txt](/src/day09/input.txt) | [Part One](/src/day09/part01.ts) [Part Two](/src/day09/part02.ts)                                  | ❓  |
+| Day                                        | Title                                             | Example Input                     | Solution Files                                                                                     |     |
+| ------------------------------------------ | ------------------------------------------------- | --------------------------------- | -------------------------------------------------------------------------------------------------- | --- |
+| [01](https://adventofcode.com/2020/day/1)  | [Report Repair](/src/day01/description.txt)       | [input.txt](/src/day01/input.txt) | [Part One](/src/day01/findTwoSum.ts) [Part Two](/src/day01/findThreeSum.ts)                        | ✅  |
+| [02](https://adventofcode.com/2020/day/2)  | [Password Philosophy](/src/day02/description.txt) | [input.txt](/src/day02/input.txt) | [Part One](/src/day02/getCountOfValidPass.ts) [Part Two](/src/day02/getCountByPosition.ts)         | ✅  |
+| [03](https://adventofcode.com/2020/day/3)  | [Toboggan Trajectory](/src/day03/description.txt) | [input.txt](/src/day03/input.txt) | [Part One & Two](/src/day03/getCountOfTrees.ts)                                                    | ✅  |
+| [04](https://adventofcode.com/2020/day/4)  | [Passport Processing](/src/day04/description.txt) | [input.txt](/src/day04/input.txt) | [Part One & Two](/src/day04/getCountOfValidPass.ts)                                                | ✅  |
+| [05](https://adventofcode.com/2020/day/5)  | [Binary Boarding](/src/day05/description.txt)     | [input.txt](/src/day05/input.txt) | [Part One & Two](/src/day05/index.ts)                                                              | ✅  |
+| [06](https://adventofcode.com/2020/day/6)  | [Custom Customs](/src/day06/description.txt)      | [input.txt](/src/day06/input.txt) | [Part One](/src/day06/quickAndDirty/part01.ts) [Part Two](/src/day06/quickAndDirty/part02.ts)      | ✅  |
+| [07](https://adventofcode.com/2020/day/7)  | [Handy Haversacks](/src/day07/description.txt)    | [input.txt](/src/day07/input.txt) | [Part One](/src/day07/helpers/getBagColorsCount.ts) [Part Two](/src/day07/helpers/getBagsCount.ts) | ✅  |
+| [08](https://adventofcode.com/2020/day/8)  | [Handheld Halting](/src/day08/description.txt)    | [input.txt](/src/day08/input.txt) | [Part One](/src/day08/part01.ts) [Part Two](/src/day08/part02.ts)                                  | ✅  |
+| [09](https://adventofcode.com/2020/day/9)  | [Encoding Error](/src/day09/description.txt)      | [input.txt](/src/day09/input.txt) | [Part One](/src/day09/part01.ts) [Part Two](/src/day09/part02.ts)                                  | ✅  |
+| [10](https://adventofcode.com/2020/day/10) | [n/a](/src/day10/description.txt)                 | [input.txt](/src/day10/input.txt) | [Part One](/src/day10/part01.ts) [Part Two](/src/day10/part02.ts)                                  | ❓  |
 
 ## Testing 🧪
 
