@@ -13,7 +13,7 @@ const run = async () => {
     fileLength: input.length,
   })
 
-  console.log('Result ...', { result: part01(input) })
+  console.log('Result ...', { result: part01(input, 25) })
   console.log({ finishedAt: new Date() })
 
   console.log('Result ...', { result: part02(input) })
